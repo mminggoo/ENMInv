@@ -81,5 +81,5 @@ class P2PEditor:
 
         images = latent2image(model=self.ldm_stable.vae, latents=latents)
 
-        return Image.fromarray(np.concatenate((image_instruct, image_gt, images[-2], images[-1]),axis=1))
+        return Image.fromarray(np.concatenate((image_instruct, image_gt, images[-1]),axis=1))
         
