@@ -474,7 +474,6 @@ def edit_image_ENM_PnP(
     return Image.fromarray(np.concatenate((
         image_instruct,
         image_gt,
-        # np.uint8(np.array(latent2image(model=pnp.vae, latents=inverted_x[1].to(pnp.vae.dtype))[0])),
         np.uint8(255*np.array(edited_image[0].permute(1,2,0).cpu().detach())),
         ),1))
 
