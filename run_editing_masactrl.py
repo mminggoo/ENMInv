@@ -88,7 +88,6 @@ class MasaCtrlEditor:
         out_image=np.concatenate((
                                 np.array(image_instruct),
                                 ((source_image[0].permute(1,2,0).detach().cpu().numpy() * 0.5 + 0.5)*255).astype(np.uint8),
-                                (image_masactrl[0].permute(1,2,0).detach().cpu().numpy()*255).astype(np.uint8),
                                 (image_masactrl[-1].permute(1,2,0).detach().cpu().numpy()*255).astype(np.uint8)),1)
         
         return Image.fromarray(out_image)
