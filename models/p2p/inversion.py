@@ -81,8 +81,6 @@ class ENMInversion:
         target_text_embeddings, uncond_embeddings, cond_embeddings = self.context.chunk(3)
         all_latent = [latent]
 
-        latents = torch.cat([latent, latent])
-        latents = latents.clone().detach()
         for i in range(self.num_ddim_steps):
             t = self.model.scheduler.timesteps[len(self.model.scheduler.timesteps) - i - 1]
             noise_pred = self.get_noise_pred_single(latent, t, uncond_embeddings)
