@@ -56,6 +56,10 @@ python run_editing_pnp.py --image_path scripts/oil_painting.jpg --original_promp
 
 if you want to run Video-P2P:
 
+To download the pre-trained model, please refer to [diffusers](https://github.com/huggingface/diffusers).
+
+Please download [sd1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5) and fill pretrained_model_path at config.
+
 ```
 python run_tuning.py  --config="configs/rabbit-jump-tune.yaml"
 python run_videop2p.py --config="configs/rabbit-jump-p2p.yaml" --fast
