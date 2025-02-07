@@ -30,8 +30,6 @@ def p2p_guidance_forward(
     latent = None,
     uncond_embeddings=None,
     ref_intermediate_latents=None,
-    attn_maps=None,
-    masks=None,
 ):
     batch_size = len(prompt)
     register_attention_control(model, controller)
