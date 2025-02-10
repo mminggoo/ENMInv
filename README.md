@@ -28,7 +28,7 @@ pip install -r environment/videop2p_requirements.txt
 
 You can download the benchmark PIE-Bench (Prompt-driven Image Editing Benchmark) [here](https://github.com/cure-lab/PnPInversion).
 
-
+We release our video editing dataset [here](https://drive.google.com/file/d/1D9uX2cY4_l2jmkMKy7f2o5HU790Rc9mH/view?usp=sharing).
 
 ## 🏃🏼 Running Scripts
 <span id="running-scripts"></span>
