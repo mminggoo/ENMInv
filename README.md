@@ -1,5 +1,3 @@
-# ENMInv
-
 
 ## 🚀 Getting Started
 <span id="getting-started"></span>
